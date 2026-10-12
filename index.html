@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#160b24">
+    <title>Halloween de Amistad</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="estrellas" aria-hidden="true"></div>
+    <div class="luna" aria-hidden="true"></div>
+
+    <div class="niebla niebla-1" aria-hidden="true"></div>
+    <div class="niebla niebla-2" aria-hidden="true"></div>
+    <div id="luciernagas" aria-hidden="true"></div>
+
+    <div class="murcielago m1" aria-hidden="true">🦇</div>
+    <div class="murcielago m2" aria-hidden="true">🦇</div>
+    <div class="murcielago m3" aria-hidden="true">🦇</div>
+
+    <main class="escena">
+        <p class="etiqueta">✦ UNA NOCHE MAGICA ✦</p>
+        <h1 class="titulo">Feliz Halloween</h1>
+
+        <p class="subtitulo">
+            Porque los mejores momentos se viven entre risas,
+            sustos y buena compañía. 🦇
+        </p>
+
+        <section class="jack-animado" aria-label="Jack de Halloween">
+            <div class="halo"></div>
+
+            <svg viewBox="0 0 220 250" class="cara-jack"
+                 role="img" aria-label="Calavera con ojos negros y sonrisa cosida">
+                <defs>
+                    <linearGradient id="hueso" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#fffef4"/>
+                        <stop offset="65%" stop-color="#e8e5d9"/>
+                        <stop offset="100%" stop-color="#bdb8b1"/>
+                    </linearGradient>
+                    <radialGradient id="sombra">
+                        <stop offset="0%" stop-color="#fff4d0" stop-opacity=".18"/>
+                        <stop offset="100%" stop-color="#fff4d0" stop-opacity="0"/>
+                    </radialGradient>
+                </defs>
+
+                <ellipse cx="110" cy="115" rx="100" ry="110" fill="url(#sombra)"/>
+
+                <path d="M110 15 C70 15 43 38 34 76
+                    C25 111 34 151 51 175
+                    C59 187 72 193 82 199 L85 211
+                    Q86 218 95 218 L125 218 Q134 218 135 211
+                    L138 199 C148 193 161 187 169 175
+                    C186 151 195 111 186 76
+                    C177 38 150 15 110 15 Z"
+                    fill="url(#hueso)" stroke="#c9c3ba" stroke-width="1.5"/>
+
+                <path class="ojo" d="M39 91 C40 67 58 52 79 56
+                    C96 59 102 76 96 98 C90 120 74 133 56 122
+                    C43 114 38 103 39 91 Z"/>
+
+                <path class="ojo" d="M181 91 C180 67 162 52 141 56
+                    C124 59 118 76 124 98 C130 120 146 133 164 122
+                    C177 114 182 103 181 91 Z"/>
+
+                <path d="M54 78 Q61 67 72 68" fill="none"
+                    stroke="#5c5067" stroke-width="2" stroke-linecap="round" opacity=".45"/>
+                <path d="M166 78 Q159 67 148 68" fill="none"
+                    stroke="#5c5067" stroke-width="2" stroke-linecap="round" opacity=".45"/>
+
+                <path d="M106 128 L98 141 Q98 145 103 143 L109 139 Z" fill="#17131b"/>
+                <path d="M114 128 L122 141 Q122 145 117 143 L111 139 Z" fill="#17131b"/>
+
+                <path d="M45 151 Q110 180 175 151" fill="none"
+                    stroke="#17131b" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M45 147 L45 158 M175 147 L175 158" fill="none"
+                    stroke="#17131b" stroke-width="2.4" stroke-linecap="round"/>
+
+                <g fill="none" stroke="#17131b" stroke-width="2" stroke-linecap="round">
+                    <path d="M54 155 L52 162"/>
+                    <path d="M65 159 L64 166"/>
+                    <path d="M77 163 L76 170"/>
+                    <path d="M89 166 L89 173"/>
+                    <path d="M101 168 L101 175"/>
+                    <path d="M113 168 L114 175"/>
+                    <path d="M125 166 L126 173"/>
+                    <path d="M137 163 L138 170"/>
+                    <path d="M149 159 L150 166"/>
+                    <path d="M160 155 L162 162"/>
+                </g>
+
+                <path d="M82 190 Q110 201 138 190" fill="none"
+                    stroke="#c0b9b0" stroke-width="1.5" opacity=".7"/>
+
+                <path d="M88 215 L78 229 L100 225 L110 239
+                    L120 225 L142 229 L132 215"
+                    fill="#17131b" stroke="#08070c" stroke-width="2" stroke-linejoin="round"/>
+
+                <path d="M110 228 C99 211 86 217 94 229
+                    L110 237 L126 229 C134 217 121 211 110 228 Z"
+                    fill="#34203f" stroke="#a78ab5" stroke-width="1.5"/>
+
+                <circle cx="110" cy="228" r="3" fill="#e9d8a5"/>
+            </svg>
+
+            <p class="jack-texto">¡Buuuu! <span>MARIIIIIII</span></p>
+        </section>
+
+        <button id="btn" type="button" aria-expanded="false" aria-controls="carta">
+            <span aria-hidden="true">✉</span>
+            Abrir mi carta de amistad
+        </button>
+
+        <section id="carta" hidden aria-live="polite">
+            <div class="sello">🎃</div>
+            <h2>Para alguien especial</h2>
+
+            <p>Bueno, no sé ni por dónde empezar, la verdad. JAJAJA.</p>
+
+            <p>
+                Hice esta página con la intención de que fuera algo especial para ti,
+                porque me sentí mal el día de tu cumpleaños al no poder regalarte nada.
+                Pero, aun así, tú me regalaste algo que, aunque quizás parezca pequeño
+                o no tenga mucho valor material, significó mucho para mí. Me hizo darme
+                cuenta de que todavía existen buenas personas, personas que pueden
+                alegrarte el día con pequeños detalles.
+            </p>
+
+            <p>
+                La verdad, no soy muy bueno expresando lo que siento. Supongo que eso ya
+                te habrás dado cuenta, JAJAJA. Pero quería hacer algo diferente, algo
+                que saliera de mí y que pudiera sacarte, aunque sea, una pequeña sonrisa.
+            </p>
+
+            <p>
+                No sé si lo estoy haciendo bien, pero al menos quería intentarlo.
+                Mmm… ¿qué más puedo decir? JAJAJA. La verdad, ya no sé qué más escribir,
+                pero espero que esta pequeña sorpresa te guste y que, cuando la veas,
+                recuerdes que hay personas que valoran mucho los pequeños detalles…
+                y tú me hiciste recordar eso.
+            </p>
+
+            <p class="firma">Con cariño, Matias 🖤</p>
+        </section>
+    </main>
+
+    <footer class="suelo" aria-hidden="true">
+        🪦　🎃　👻　🎃　🪦
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
